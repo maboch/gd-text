@@ -105,6 +105,20 @@ class Color
         return $fromFloat($rgb);
     }
 
+    public static function fromCmyk(int $c, int $m, int $y, int $k): Color
+    {
+        $k = ($k / 100);
+        $c = ($c / 100) * (1 - $k) + $k;
+        $m = ($m / 100) * (1 - $k) + $k;
+        $y = ($y / 100) * (1 - $k) + $k;
+
+        $r = round(255 * (1 - $c));
+        $g = round(255 * (1 - $m));
+        $b = round(255 * (1 - $y));
+
+        return new Color($r, $g, $b);
+    }
+
     /**
      * @param resource $image GD image resource
      * @return int Returns the index of the specified color+alpha in the palette of the image,

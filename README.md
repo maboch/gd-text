@@ -4,7 +4,7 @@ gd-text
 ### Installation via Composer:
 
 ```bash
-composer require stil/gd-text
+composer require maboch/gd-text
 ```
 
 ### Basic usage example

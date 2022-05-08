@@ -1,10 +1,11 @@
 {
-    "name": "stil/gd-text",
+    "name": "maboch/gd-text",
     "description": "A class drawing multiline and aligned text on pictures. Uses GD extension.",
     "license": "MIT",
-    "version": "0.1.0",
+    "minimum-stability": "dev",
+    "version": "1.1.1",
     "require": {
-        "php": ">=5.3",
+        "php": "^7.2|^8.0",
         "ext-gd": "*"
     },
     "require-dev": {

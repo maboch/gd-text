@@ -2,6 +2,7 @@
     "name": "stil/gd-text",
     "description": "A class drawing multiline and aligned text on pictures. Uses GD extension.",
     "license": "MIT",
+    "version": "0.1.0",
     "require": {
         "php": ">=5.3",
         "ext-gd": "*"
